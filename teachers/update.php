@@ -30,6 +30,7 @@ $mobileno           =   $_POST['mobileno'];
 $id                 =   $_POST['id'];
 
 $query = "update teachers set name='".$name."', dob = '".$dob."' , age = '".$age."' , email = '".$email."' , department = '".$department."', qualification = '".$qualification."', annualsalary = '".$annualsalary."',  mobileno = '".$mobileno."' where id=".$id;
+
 if(mysqli_query($connection,$query)){
     echo "teacher update succesfully";
 }
