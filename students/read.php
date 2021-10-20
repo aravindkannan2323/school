@@ -47,17 +47,17 @@ $students = mysqli_fetch_all($result,MYSQLI_ASSOC);
 <table class="table">
     <tr>
         <th>id</th>
-        <th>name</th>
-        <th>username</th>
-        <th>rolleno</th>
-        <th>class</th>
-        <th>dob</th>
-        <th>age</th>
-        <th>bloodgroup</th>
-        <th>email</th>
-        <th>mobileno</th>
-        <th>password</th>
-        <th>action</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Rolleno</th>
+        <th>Class</th>
+        <th>Dob</th>
+        <th>Age</th>
+        <th>BloodGroup</th>
+        <th>Email</th>
+        <th>Mobileno</th>
+        <th>Password</th>
+        <th>Action</th>
     </tr> 
     <?php
     foreach ($students as $student) { ?>

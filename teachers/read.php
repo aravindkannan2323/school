@@ -40,20 +40,20 @@ $teachers = mysqli_fetch_all($result,MYSQLI_ASSOC);
 //print_r($teachers);
 ?>
 <div class="container">
-<h1>Teachers details</h1>
+<h1>Teachers Details</h1>
 <a href="register.php" class="btn btn-success float-end">Add New Teacher</a>
 <table class="table">
 <tr>
         <th>id</th>
-        <th>name</th>
-        <th>dob</th>
-        <th>age</th>
-        <th>email</th>
-        <th>department</th>
-        <th>qualification</th>
-        <th>annualsalary</th>
-        <th>mobileno</th>
-        <th>action</th>
+        <th>Name</th>
+        <th>Dob</th>
+        <th>Age</th>
+        <th>Email</th>
+        <th>Department</th>
+        <th>Qualification</th>
+        <th>Monthlysalary</th>
+        <th>Mobileno</th>
+        <th>Action</th>
     </tr> 
     <?php
     foreach ($teachers as $teacher) { ?>
@@ -65,11 +65,11 @@ $teachers = mysqli_fetch_all($result,MYSQLI_ASSOC);
         <td><?php echo $teacher['email']; ?></td>
         <td><?php echo $teacher['department']; ?></td>
         <td><?php echo $teacher['qualification']; ?></td>
-        <td><?php echo $teacher['annualsalary']; ?></td>
+        <td><?php echo $teacher['monthlysalary']; ?></td>
         <td><?php echo $teacher['mobileno']; ?></td>
         <td>
-        <a href="edit.php?id=<?php echo $teacher['id']; ?>" class="btn btn-success">edit</a>
-        <a href="delete.php?id=<?php echo $teacher['id']; ?>" class="btn btn-danger">delete</a>
+        <a href="edit.php?id=<?php echo $teacher['id']; ?>" class="btn btn-success">Edit</a>
+        <a href="delete.php?id=<?php echo $teacher['id']; ?>" class="btn btn-danger">Delete</a>
         </td>
     </tr>  
     <?php

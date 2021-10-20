@@ -26,11 +26,11 @@ $age             = $_POST['age'];
 $email           = $_POST['email'];
 $department      = $_POST['department'];
 $qualification   = $_POST['qualification'];
-$annualsalary    = $_POST['annualsalary'];
+$monthlysalary   = $_POST['monthlysalary'];
 $mobileno        = $_POST['mobileno'];
 
-$query = "INSERT INTO teachers ( name, dob, age, email, department, qualification, annualsalary, mobileno)
-VALUES ('$name', '$dob', '$age', '$email', '$department', '$qualification', '$annualsalary', '$mobileno')";
+$query = "INSERT INTO teachers ( name, dob, age, email, department, qualification, monthlysalary, mobileno)
+VALUES ('$name', '$dob', '$age', '$email', '$department', '$qualification', '$monthlysalary', '$mobileno')";
 
  if (mysqli_query($connection,$query)) { 
        echo "teacher record created sucessfully!";

@@ -25,18 +25,18 @@
           </div>
 
           <div>
-            <label for="dob" class="form-label">DOB</label>
-            <input type="date" class="form-control" name="dob" id="dob" format="yyyy-mm-dd">
+            <label for="dob" class="form-label">DOB *</label>
+            <input type="date" class="form-control required" name="dob" id="dob" format="yyyy-mm-dd" required>
           </div>
 
           <div>
-            <label for="age" class="form-label">Age</label>
-            <input type="number" class="form-control" name="age" id="age" min="18" max="25">
+            <label for="age" class="form-label">Age *</label>
+            <input type="number" class="form-control required" name="age" id="age" min="18" max="25" required>
           </div>
 
           <div>
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" name="email" id="email">
+            <label for="email" class="form-label">Email *</label>
+            <input type="email" class="form-control required" name="email" id="email" placeholder="Enter your Email" required>
           </div>
           
           <div>
@@ -60,32 +60,32 @@
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-              <label class="form-check-label" for="flexCheckChecked">
+              <input class="form-check-input" type="checkbox" value="physics" id="deptphysics">
+              <label class="form-check-label" for="deptphysics">
                 Physics
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="History" id="depthistory">
+              <label class="form-check-label" for="depthistory">
                 History
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-              <label class="form-check-label" for="flexCheckChecked">
-                B.Com
+              <input class="form-check-input" type="checkbox" value="Accounts&commerce" id="deptaccounts&commerce">
+              <label class="form-check-label" for="deptaccounts&commerce">
+                Accounts&commerce
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
+              <input class="form-check-input" type="checkbox" value="computer science" id="deptcomputerscience">
+              <label class="form-check-label" for="deptcomputerscience">
                 Computer science
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-              <label class="form-check-label" for="flexCheckChecked">
+              <input class="form-check-input" type="checkbox" value="chemistry" id="deptchemistry" checked>
+              <label class="form-check-label" for="deptchemistry">
                 Chemistry
               </label>
             </div>
@@ -94,46 +94,46 @@
           <div>
             <label for="" class="form-label"><b>Qualification</b></label>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
+              <input class="form-check-input" type="radio" name="M.Sc" id="quliftMsc">
+              <label class="form-check-label" for="quliftMsc">
                 M.Sc
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
+              <input class="form-check-input" type="radio" name="B.Ed" id="quliftBEd">
+              <label class="form-check-label" for="quliftBEd">
                 B.Ed
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
+              <input class="form-check-input" type="radio" name="MBA" id="quliftMBA">
+              <label class="form-check-label" for="quliftMBA">
                 MBA
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
+              <input class="form-check-input" type="radio" name="MA,B.Ed" id="quliftMABEd">
+              <label class="form-check-label" for="quliftMABEd">
                 MA,B.Ed
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-              <label class="form-check-label" for="flexRadioDefault2">
+              <input class="form-check-input" type="radio" name="B.Sc" id="quliftBSc">
+              <label class="form-check-label" for="quliftBSc">
                 B.Sc
               </label>
             </div>
           </div>
           <div>
-            <label for="annualsalary" class="form-label">Annual Salary</label>
-            <input type="annualsalary" class="form-control" name="annualsalary" id="annualsalary">
+            <label for="monthlysalary" class="form-label">Monthly Salary *</label>
+            <input type="monthlysalary" class="form-control required" name="monthlysalary" id="monthlysalary" placeholder="Enter your Monthlysalary" required>
           </div>
           <div>
-            <label for="mobileno" class="form-label">Mobile No</label>
-            <input type="tel" class="form-control" name="mobileno" id="mobileno" maxlength="10" placeholder="Enter your 10 digit mobile number" required>
+            <label for="mobileno" class="form-label">Mobile No *</label>
+            <input type="tel" class="form-control required" name="mobileno" id="mobileno" maxlength="10" placeholder="Enter your 10 digit mobile number" required>
           </div>
 
-          <button type="submit" class="btn btn-success mt-2">save</button>
+          <button type="submit" class="btn btn-success mt-2">Save</button>
 
         </div>
       </div>
