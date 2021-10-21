@@ -19,31 +19,31 @@
       <div class="row">
         <div class='col-md-6'>
           <div>
-            <label for="Inputname" class="form-label">Name *</label>
+            <label for="name" class="form-label">Name *</label>
             <input type="text" class="form-control required" name="name" id="name" placeholder="Enter your Full Name" required>
           </div>
           <div>
-            <label for="Inputusername2" class="form-label">Username *</label>
+            <label for="username" class="form-label">Username *</label>
             <input type="text" class="form-control required" name="username" id="username" placeholder="Enter Username" required>
           </div>
           <div>
-            <label for="Inputrolleno" class="form-label">Rolleno *</label>
+            <label for="rolleno" class="form-label">Rolleno *</label>
             <input type="text" class="form-control required" name="rolleno" id="rolleno" placeholder="Enter Rolleno" required>
           </div>
           <div>
-            <label for="Inputclass" class="form-label">Class *</label>
+            <label for="class" class="form-label">Class *</label>
             <input type="text" class="form-control required" name="class" id="class" placeholder="Enter your class" required>
           </div>
           <div>
-            <label for="Inputdob" class="form-label">Dob *</label>
+            <label for="dob" class="form-label">Dob *</label>
             <input type="Date" class="form-control required" name="dob" id="dob" required>
           </div>
           <div>
-            <label for="Inputage" class="form-label">Age *</label>
+            <label for="age" class="form-label">Age *</label>
             <input type="number" class="form-control required" name="age" id="age" placeholder="Enter your Age" required>
           </div>
           <div>
-            <label for="Inputbloodgroup" class="form-label">Bloodgroup *</label>
+            <label for="bloodgroup" class="form-label">Bloodgroup *</label>
             <select class="form-select" aria-label="Default select example">
               <option selected>BloodGroup</option>
               <option value="AB-ve">AB-ve</option>
@@ -54,15 +54,15 @@
             </select>
           </div>
           <div>
-            <label for="Inputemail" class="form-label">Email *</label>
+            <label for="email" class="form-label">Email *</label>
             <input type="email" class="form-control required" name="email" id="email" placeholder="Enter Your Email" required>
           </div>
           <div>
-            <label for="Inputmobileno" class="form-label">Mobileno *</label>
+            <label for="mobileno" class="form-label">Mobileno *</label>
             <input type="tel" class="form-control required" name="mobileno" id="mobileno" placeholder="Enter your 10 digit mobile number" required>
           </div>
           <div>
-            <label for="Inputpassword" class="form-label">Password *</label>
+            <label for="password" class="form-label">Password *</label>
             <input type="password" class="form-control required" name="password" id="password" placeholder="Enter your 12 digit password" required>
           </div>
 

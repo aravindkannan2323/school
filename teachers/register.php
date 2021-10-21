@@ -40,51 +40,51 @@
           </div>
           
           <div>
-            <label for="" class="form-label"><b>Department</b></label>
+            <label for="department" class="form-label"><b>Department</b></label>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="english" id="deptenglish">
+              <input class="form-check-input" type="checkbox" value="english" name="department[]" id="deptenglish">
               <label class="form-check-label" for="deptenglish">
                 English
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="tamil" id="depttamil">
+              <input class="form-check-input" type="checkbox" value="tamil" name="department[]" id="depttamil">
               <label class="form-check-label" for="depttamil">
                 Tamil
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="maths" id="deptmaths">
+              <input class="form-check-input" type="checkbox" value="maths" name="department[]" id="deptmaths">
               <label class="form-check-label" for="deptmaths">
                 Maths
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="physics" id="deptphysics">
+              <input class="form-check-input" type="checkbox" value="physics" name="department[]" id="deptphysics">
               <label class="form-check-label" for="deptphysics">
                 Physics
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="History" id="depthistory">
+              <input class="form-check-input" type="checkbox" value="History" name="department[]" id="depthistory">
               <label class="form-check-label" for="depthistory">
                 History
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="Accounts&commerce" id="deptaccounts&commerce">
+              <input class="form-check-input" type="checkbox" value="Accounts&commerce" name="department[]" id="deptaccounts&commerce">
               <label class="form-check-label" for="deptaccounts&commerce">
                 Accounts&commerce
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="computer science" id="deptcomputerscience">
+              <input class="form-check-input" type="checkbox" value="computer science" name="department[]" id="deptcomputerscience">
               <label class="form-check-label" for="deptcomputerscience">
                 Computer science
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="chemistry" id="deptchemistry" checked>
+              <input class="form-check-input" type="checkbox" value="chemistry" name="department[]" id="deptchemistry" checked>
               <label class="form-check-label" for="deptchemistry">
                 Chemistry
               </label>
@@ -94,31 +94,31 @@
           <div>
             <label for="" class="form-label"><b>Qualification</b></label>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="M.Sc" id="quliftMsc">
+              <input class="form-check-input" type="radio" name="qualification" id="quliftMsc">
               <label class="form-check-label" for="quliftMsc">
                 M.Sc
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="B.Ed" id="quliftBEd">
+              <input class="form-check-input" type="radio" name="qualification" id="quliftBEd">
               <label class="form-check-label" for="quliftBEd">
                 B.Ed
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="MBA" id="quliftMBA">
+              <input class="form-check-input" type="radio" name="qualification" id="quliftMBA">
               <label class="form-check-label" for="quliftMBA">
                 MBA
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="MA,B.Ed" id="quliftMABEd">
+              <input class="form-check-input" type="radio" name="qualification" id="quliftMABEd">
               <label class="form-check-label" for="quliftMABEd">
                 MA,B.Ed
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="B.Sc" id="quliftBSc">
+              <input class="form-check-input" type="radio" name="qualification" id="quliftBSc">
               <label class="form-check-label" for="quliftBSc">
                 B.Sc
               </label>

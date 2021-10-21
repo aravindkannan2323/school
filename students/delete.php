@@ -1,8 +1,8 @@
 <?php
 
-include 'Datebase.php';
+include '../database/datebase.php';
 
-$dbobj = New Database();
+$dbobj = new Database();
 $connection = $dbobj->createconnection();
 
 

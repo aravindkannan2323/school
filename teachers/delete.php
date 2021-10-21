@@ -1,8 +1,8 @@
 <?php
 
-include 'Database.php';
+include '../database/database.php';
 
-$dbobj = New Database();
+$dbobj = new Database();
 $connection = $dbobj->createconnection();
 
 $id = $_GET['id'];

@@ -1,5 +1,5 @@
 <?php
-include 'database.php'; 
+include '../database/database.php'; 
 ?>
 
 
@@ -37,14 +37,14 @@ $students = mysqli_fetch_all($result,MYSQLI_ASSOC);
         <th>id</th>
         <th>Name</th>
         <th>Username</th>
-        <th>Rolleno</th>
+        <th>Rolle No</th>
         <th>Class</th>
         <th>Dob</th>
         <th>Age</th>
-        <th>BloodGroup</th>
+        <th>Blood Group</th>
         <th>Email</th>
-        <th>Mobileno</th>
-        <th>Password</th>
+        <th>Mobile No</th>
+        
         <th>Action</th>
     </tr> 
     <?php
@@ -60,7 +60,7 @@ $students = mysqli_fetch_all($result,MYSQLI_ASSOC);
         <td><?php echo $student['bloodgroup']; ?></td>
         <td><?php echo $student['email']; ?></td>
         <td><?php echo $student['mobileno']; ?></td>
-        <td><?php echo $student['password']; ?></td>
+        
         
         <td>
             <a href="edit.php?id=<?php echo $student['id']; ?>" class="btn btn-success">edit</a>

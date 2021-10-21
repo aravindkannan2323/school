@@ -1,8 +1,8 @@
 <?php
 
-include 'databsase.php';
+include '../database/database.php';
 
-$dbobj = New Database();
+$dbobj = new Database();
 $connection = $dbobj->createconnection();
 
 //insert data
@@ -21,10 +21,11 @@ $password   = $_POST['password'];
 $query = "INSERT INTO students ( name, username, rolleno, class, dob, age, bloodgroup, email, mobileno, password)
 VALUES ('$name', '$username', '$rolleno', '$class', '$dob', '$age', '$bloodgroup', '$email', '$mobileno', '$password')";
 
- if (mysqli_query($connection,$query)) { 
-       echo "student record created sucessfully!";
-     }else {
-         echo 'Error creeting data: ' .mysqli_error($connection);
-     }
+if (mysqli_query($connection,$query)) { 
+  echo "student record created sucessfully!";
+}
+else {
+    echo 'Error creeting data: ' .mysqli_error($connection);
+}
 
 ?>

@@ -1,5 +1,5 @@
 <?php
-include 'Database.php';
+include '../database/database.php';
 ?>
 
 
@@ -19,7 +19,7 @@ include 'Database.php';
   <?php
 
 
-$dbobj = New Database();
+$dbobj = new Database();
 $connection = $dbobj->createconnection();
 
 $query = "SELECT * FROM Students WHERE id=" . $_GET['id'];

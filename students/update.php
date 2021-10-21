@@ -1,8 +1,8 @@
 <?php
 
-include 'Database.php';
+include '../database/Database.php';
 
-$dbobj = New Database();
+$dbobj = new Database();
 $connection = $dbobj->createconnection();
 
 $name       = $_POST['name'];

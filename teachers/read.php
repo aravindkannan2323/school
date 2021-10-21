@@ -1,6 +1,6 @@
 <?php 
 
-include 'Database.php';
+include '../database/database.php';
 
 ?>
 
@@ -21,7 +21,7 @@ include 'Database.php';
 <?php
 
 
-$dbobj = New Database();
+$dbobj = new Database();
 $connection = $dbobj->createconnection();
 
 $query = "SELECT * FROM teachers";
@@ -43,8 +43,8 @@ $teachers = mysqli_fetch_all($result,MYSQLI_ASSOC);
         <th>Email</th>
         <th>Department</th>
         <th>Qualification</th>
-        <th>Monthlysalary</th>
-        <th>Mobileno</th>
+        <th>Monthly Salary</th>
+        <th>Mobile No</th>
         <th>Action</th>
     </tr> 
     <?php

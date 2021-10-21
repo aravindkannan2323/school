@@ -1,19 +1,22 @@
 <?php
 
-include 'Database.php';
+include '../database/database.php';
 
-$dbobj = New Database();
+$dbobj = new Database();
 $connection = $dbobj->createconnection();
 
-$Name               =   $_POST['name'];
-$Dob                =   $_POST['dob'];
-$Age                =   $_POST['age'];
-$Email              =   $_POST['email'];
-$Department         =   $_POST['department'];
-$Qualification      =   $_POST['qualification'];
-$monthlysalary       =   $_POST['monthlysalary'];
-$Mobileno           =   $_POST['mobileno'];
-$Id                 =   $_POST['id'];
+$name               =   $_POST['name'];
+$dob                =   $_POST['dob'];
+$age                =   $_POST['age'];
+$email              =   $_POST['email'];
+$department         =   $_POST['department'];
+$qualification      =   $_POST['qualification'];echo $qualification; 
+$monthlysalary      =   $_POST['monthlysalary'];
+$mobileno           =   $_POST['mobileno'];
+$id                 =   $_POST['id'];
+
+
+$department = implode(',', $department);
 
 $query = "update teachers set name='".$name."', dob = '".$dob."' , age = '".$age."' , email = '".$email."' , department = '".$department."', qualification = '".$qualification."', monthlysalary = '".$monthlysalary."',  mobileno = '".$mobileno."' where id=".$id;
 
