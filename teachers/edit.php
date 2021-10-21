@@ -1,3 +1,7 @@
+<?php
+include 'Database.php';
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -14,23 +18,9 @@
 <?php
 
 
-// connect to the datbase
+$dbobj = New Database();
+$connection = $dbobj->createconnection();
 
-// database credentials
-$server_name = "localhost";
-$server_username = "root";
-$server_password = "";
-$db_name = "school";
-
-// create connection
-$connection = mysqli_connect($server_name, $server_username, $server_password, $db_name);
-
-//check the connection
-if (!$connection) {
-  die("Connection Failed: " .  mysqli_connect_error());
-} else {
-  echo "Connected to database successfully";
-}
 $query = "SELECT * FROM teachers WHERE id=" . $_GET['id'];
 $result = mysqli_query($connection, $query);
 
@@ -47,26 +37,26 @@ $teacher = mysqli_fetch_assoc($result);
         <div class='col-md-6'>
           <div>
             <label for="Inputname" class="form-label">Name</label>
-            <input type="text" class="form-control" name="Name" id="Name" value="<?php echo $teacher['Name']; ?>" placeholder="full name">
+            <input type="text" class="form-control" name="name" id="name" value="<?php echo $teacher['name']; ?>" placeholder="Enter your Full Name">
           </div>
 
           <div>
             <label for="Inputdob" class="form-label">Dob</label>
-            <input type="Date" class="form-control" name="Dob" id="Dob" value="<?php echo $teacher['Dob']; ?>">
+            <input type="date" class="form-control" name="Dob" id="dob" format="yyyy-mm-dd" value="<?php echo $teacher['dob']; ?>">
           </div>
           <div>
             <label for="Inputage" class="form-label">Age</label>
-            <input type="number" class="form-control" name="age" id="age" value="<?php echo $teacher['age']; ?>">
+            <input type="number" class="form-control" name="age" id="age" min="25" max="35" value="<?php echo $teacher['age']; ?>">
           </div>
 
           <div>
             <label for="Inputemail" class="form-label">Email</label>
-            <input type="email" class="form-control" name="email" id="email" value="<?php echo $teacher['email']; ?>">
+            <input type="email" class="form-control" name="email" id="email" value="<?php echo $teacher['email']; ?>" placeholder="Enter your Email">
           </div>
           <div>
             <label for="" class="form-label"><b>Department</b></label>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="english" id="deptenglish" value="<?php echo $teacher['English']; ?>">
+              <input class="form-check-input" type="checkbox" value="english" id="deptenglish" value="<?php echo $teacher['English']; ?>" >
               <label class="form-check-label" for="deptenglish">
                 English
               </label>
@@ -149,11 +139,11 @@ $teacher = mysqli_fetch_assoc($result);
           </div>
           <div>
             <label for="Inputmonthlysalary" class="form-label">Monthlysalary</label>
-            <input type="monthlysalary" class="form-control" name="monthlysalary" id="monthlysalary" value="<?php echo $teacher['monthlysalary']; ?>">
+            <input type="monthlysalary" class="form-control" name="monthlysalary" id="monthlysalary" value="<?php echo $teacher['monthlysalary']; ?>" placeholder="Enter your Monthlysalary">
           </div>
           <div>
             <label for="Inputmobileno" class="form-label">Mobileno</label>
-            <input type="number" class="form-control" name="mobileno" id="mobileno" value="<?php echo $teacher['mobileno']; ?>">
+            <input type="number" class="form-control" name="mobileno" id="mobileno" value="<?php echo $teacher['mobileno']; ?>" placeholder="Enter your 10 digit mobile number">
           </div>
 
           <input type="hidden" name="id" id="id" value="<?php echo $_GET['id']; ?>">

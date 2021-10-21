@@ -1,3 +1,9 @@
+<?php 
+
+include 'Database.php';
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -15,23 +21,9 @@
 <?php
 
 
-// connect to the datbase
+$dbobj = New Database();
+$connection = $dbobj->createconnection();
 
-// database credentials
-$server_name = "localhost";
-$server_username ="root";
-$server_password = "";
-$db_name = "school";
-
-// create connection
-$connection = mysqli_connect($server_name, $server_username, $server_password, $db_name);
-
-//check the connection
-if(!$connection){
-    die("Connection Failed: ".  mysqli_connect_error());
-} else {
-    echo "Connected to database successfully";
-}
 $query = "SELECT * FROM teachers";
 $result = mysqli_query($connection,$query);
 

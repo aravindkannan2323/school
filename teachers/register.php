@@ -31,7 +31,7 @@
 
           <div>
             <label for="age" class="form-label">Age *</label>
-            <input type="number" class="form-control required" name="age" id="age" min="18" max="25" required>
+            <input type="number" class="form-control required" name="age" id="age" min="25" max="35" required>
           </div>
 
           <div>
@@ -125,11 +125,11 @@
             </div>
           </div>
           <div>
-            <label for="monthlysalary" class="form-label">Monthly Salary *</label>
+            <label for="monthlysalary" class="form-label">MonthlySalary *</label>
             <input type="monthlysalary" class="form-control required" name="monthlysalary" id="monthlysalary" placeholder="Enter your Monthlysalary" required>
           </div>
           <div>
-            <label for="mobileno" class="form-label">Mobile No *</label>
+            <label for="mobileno" class="form-label">MobileNo *</label>
             <input type="tel" class="form-control required" name="mobileno" id="mobileno" maxlength="10" placeholder="Enter your 10 digit mobile number" required>
           </div>
 
