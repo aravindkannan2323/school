@@ -1,5 +1,7 @@
 <?php
 include '../database/database.php';
+
+include '../includes/navbar.php';
 ?>
 
 

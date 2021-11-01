@@ -2,6 +2,8 @@
 
 include '../database/database.php';
 
+include '../includes/navbar.php';
+
 ?>
 
 <!doctype html>

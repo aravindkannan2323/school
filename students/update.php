@@ -1,6 +1,6 @@
 <?php
 
-include '../database/Database.php';
+include '../database/database.php';
 
 $dbobj = new Database();
 $connection = $dbobj->createconnection();
