@@ -39,31 +39,31 @@ $student = mysqli_fetch_assoc($result);
         <div class="row">
             <div class='col-md-6'>
  <div>
-  <label for="Inputname" class="form-label">name</label>
+  <label for="Inputname" class="form-label">Name</label>
   <input type="text" class="form-control" name="name" id="name" value="<?php echo $student['name']; ?>" placeholder="full name">
 </div>
 <div>
-  <label for="Inputusername2" class="form-label">username</label>
+  <label for="Inputusername2" class="form-label">Username</label>
   <input type="text" class="form-control" name="username" id="username" value="<?php echo $student['username']; ?>" placeholder="username">
 </div>
 <div>
-  <label for="Inputrolleno" class="form-label">rolleno</label>
+  <label for="Inputrolleno" class="form-label">Rolle No</label>
   <input type="text" class="form-control" name="rolleno" id="rolleno" value="<?php echo $student['rolleno']; ?>" placeholder="rolleno">
 </div>
 <div>
-  <label for="Inputclass" class="form-label">class</label>
+  <label for="Inputclass" class="form-label">Class</label>
   <input type="text" class="form-control" name="class" id="class" value="<?php echo $student['class']; ?>">
 </div>
 <div>
-  <label for="Inputdob" class="form-label">dob</label>
+  <label for="Inputdob" class="form-label">DOB</label>
   <input type="dob" class="form-control" name="dob" id="dob" value="<?php echo $student['dob']; ?>">
 </div>
 <div>
-  <label for="Inputage" class="form-label">age</label>
+  <label for="Inputage" class="form-label">Age</label>
   <input type="number" class="form-control" name="age" id="age" value="<?php echo $student['age']; ?>">
 </div>
 <div>
-  <label for="Inputbloodgroup" class="form-label">bloodgroup</label>
+  <label for="Inputbloodgroup" class="form-label">Blood Group</label>
   <input type="bloodgroup" class="form-control" name="bloodgroup" id="bloodgroup" value="<?php echo $student['bloodgroup']; ?>">
 </div>
 <div>

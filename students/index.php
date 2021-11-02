@@ -32,16 +32,16 @@ $students = mysqli_fetch_all($result,MYSQLI_ASSOC);
 //print_r($students);
 ?>
 <div class="container">
-<h1>list of all student</h1>
+<h1>list of all students</h1>
 <a href="register.php" class="btn btn-success float-end">Add New User</a>
 <table class="table">
     <tr>
-        <th>id</th>
+        <th>Id</th>
         <th>Name</th>
         <th>Username</th>
-        <th>Rolle No</th>
+        <th>Roll No</th>
         <th>Class</th>
-        <th>Dob</th>
+        <th>DOB</th>
         <th>Age</th>
         <th>Blood Group</th>
         <th>Email</th>
@@ -55,7 +55,7 @@ $students = mysqli_fetch_all($result,MYSQLI_ASSOC);
         <td><?php echo $student['id']; ?></td>
         <td><?php echo $student['name']; ?></td>
         <td><?php echo $student['username']; ?></td>
-        <td><?php echo $student['rolleno']; ?></td>
+        <td><?php echo $student['rollno']; ?></td>
         <td><?php echo $student['class']; ?></td>
         <td><?php echo $student['dob']; ?></td>
         <td><?php echo $student['age']; ?></td>
@@ -63,10 +63,10 @@ $students = mysqli_fetch_all($result,MYSQLI_ASSOC);
         <td><?php echo $student['email']; ?></td>
         <td><?php echo $student['mobileno']; ?></td>
         
-        
+
         <td>
-            <a href="edit.php?id=<?php echo $student['id']; ?>" class="btn btn-success">edit</a>
-            <a href="delete.php?id=<?php echo $student['id']; ?>" class="btn btn-danger">delete</a>
+            <a href="edit.php?id=<?php echo $student['id']; ?>" class="btn btn-success">Edit</a>
+            <a href="delete.php?id=<?php echo $student['id']; ?>" class="btn btn-danger">Delete</a>
         </td>
     </tr>
 

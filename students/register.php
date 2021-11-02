@@ -27,7 +27,7 @@
             <input type="text" class="form-control required" name="username" id="username" placeholder="Enter Username" required>
           </div>
           <div>
-            <label for="rolleno" class="form-label">Rolleno *</label>
+            <label for="rolleno" class="form-label">Roll No *</label>
             <input type="text" class="form-control required" name="rolleno" id="rolleno" placeholder="Enter Rolleno" required>
           </div>
           <div>
@@ -35,7 +35,7 @@
             <input type="text" class="form-control required" name="class" id="class" placeholder="Enter your class" required>
           </div>
           <div>
-            <label for="dob" class="form-label">Dob *</label>
+            <label for="dob" class="form-label">DOB *</label>
             <input type="Date" class="form-control required" name="dob" id="dob" required>
           </div>
           <div>
@@ -43,7 +43,7 @@
             <input type="number" class="form-control required" name="age" id="age" placeholder="Enter your Age" required>
           </div>
           <div>
-            <label for="bloodgroup" class="form-label">Bloodgroup *</label>
+            <label for="bloodgroup" class="form-label">Blood Group *</label>
             <select class="form-select" aria-label="Default select example">
               <option selected>BloodGroup</option>
               <option value="AB-ve">AB-ve</option>
@@ -58,7 +58,7 @@
             <input type="email" class="form-control required" name="email" id="email" placeholder="Enter Your Email" required>
           </div>
           <div>
-            <label for="mobileno" class="form-label">Mobileno *</label>
+            <label for="mobileno" class="form-label">Mobile No *</label>
             <input type="tel" class="form-control required" name="mobileno" id="mobileno" placeholder="Enter your 10 digit mobile number" required>
           </div>
           <div>
