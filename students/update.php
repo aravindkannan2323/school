@@ -24,3 +24,5 @@ if(mysqli_query($connection,$query)){
 else{
     echo 'Error updating student';
 }
+
+header('location: index.php');

@@ -24,4 +24,6 @@ VALUES ('$name', '$dob', '$age', '$email', '$department', '$qualification', '$mo
          echo 'Error creeting data: ' .mysqli_error($connection);
      }
 
+     header ('location: index.php');
+
 ?>

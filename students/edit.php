@@ -15,7 +15,7 @@ include '../includes/navbar.php';
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <title>edit student</title>
+    <title>Edit Student</title>
   </head>
 
   <?php
@@ -34,54 +34,54 @@ $student = mysqli_fetch_assoc($result);
 
   <body>
       <div class="container">
-    <h1>edit student</h1>
+    <h1>Edit Students</h1>
     <form action="update.php" method="POST">
         <div class="row">
             <div class='col-md-6'>
  <div>
-  <label for="Inputname" class="form-label">Name</label>
+  <label for="name" class="form-label">Name</label>
   <input type="text" class="form-control" name="name" id="name" value="<?php echo $student['name']; ?>" placeholder="full name">
 </div>
 <div>
-  <label for="Inputusername2" class="form-label">Username</label>
+  <label for="username" class="form-label">Username</label>
   <input type="text" class="form-control" name="username" id="username" value="<?php echo $student['username']; ?>" placeholder="username">
 </div>
 <div>
-  <label for="Inputrolleno" class="form-label">Rolle No</label>
+  <label for="rolleno" class="form-label">Roll No</label>
   <input type="text" class="form-control" name="rolleno" id="rolleno" value="<?php echo $student['rolleno']; ?>" placeholder="rolleno">
 </div>
 <div>
-  <label for="Inputclass" class="form-label">Class</label>
+  <label for="class" class="form-label">Class</label>
   <input type="text" class="form-control" name="class" id="class" value="<?php echo $student['class']; ?>">
 </div>
 <div>
-  <label for="Inputdob" class="form-label">DOB</label>
+  <label for="dob" class="form-label">DOB</label>
   <input type="dob" class="form-control" name="dob" id="dob" value="<?php echo $student['dob']; ?>">
 </div>
 <div>
-  <label for="Inputage" class="form-label">Age</label>
+  <label for="age" class="form-label">Age</label>
   <input type="number" class="form-control" name="age" id="age" value="<?php echo $student['age']; ?>">
 </div>
 <div>
-  <label for="Inputbloodgroup" class="form-label">Blood Group</label>
+  <label for="bloodgroup" class="form-label">Blood Group</label>
   <input type="bloodgroup" class="form-control" name="bloodgroup" id="bloodgroup" value="<?php echo $student['bloodgroup']; ?>">
 </div>
 <div>
-  <label for="Inputemail" class="form-label">email</label>
+  <label for="email" class="form-label">Email</label>
   <input type="email" class="form-control" name="email" id="email" value="<?php echo $student['email']; ?>">
 </div>
 <div>
-  <label for="Inputmobileno" class="form-label">mobileno</label>
+  <label for="mobileno" class="form-label">Mobile No</label>
   <input type="number" class="form-control" name="mobileno" id="mobileno" value="<?php echo $student['mobileno']; ?>">
 </div>
 <div>
-  <label for="Inputpassword" class="form-label">password</label>
+  <label for="password" class="form-label">Password</label>
   <input type="password" class="form-control" name="password" id="password" value="<?php echo $student['password']; ?>">
 </div>
 
 <input type="hidden" name="id" id="id" value="<?php echo $_GET['id']; ?>">
 
-<button type="submit" class="btn btn-success mt-2">update</button>
+<button type="submit" class="btn btn-success mt-2">Update</button>
             </div>
         </div>
         

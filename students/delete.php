@@ -1,6 +1,6 @@
 <?php
 
-include '../database/datebase.php';
+include '../database/database.php';
 
 $dbobj = new Database();
 $connection = $dbobj->createconnection();
@@ -15,4 +15,6 @@ if(mysqli_query($connection,$query)){
 else{
     echo 'error deleting student: '.mysqli_error($connection);
 }
+
+header ('location: index.php');
 ?>

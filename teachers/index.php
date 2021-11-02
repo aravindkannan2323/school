@@ -34,13 +34,13 @@ $teachers = mysqli_fetch_all($result,MYSQLI_ASSOC);
 //print_r($teachers);
 ?>
 <div class="container">
-<h1>Teachers Details</h1>
+<h1>Teachers</h1>
 <a href="register.php" class="btn btn-success float-end">Add New Teacher</a>
 <table class="table">
 <tr>
         <th>Id</th>
         <th>Name</th>
-        <th>Dob</th>
+        <th>DOB</th>
         <th>Age</th>
         <th>Email</th>
         <th>Department</th>

@@ -15,7 +15,7 @@ include '../includes/navbar.php';
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <title>student list</title>
+    <title>Students list</title>
   </head>
   <body>
     
@@ -32,7 +32,7 @@ $students = mysqli_fetch_all($result,MYSQLI_ASSOC);
 //print_r($students);
 ?>
 <div class="container">
-<h1>list of all students</h1>
+<h1>Students</h1>
 <a href="register.php" class="btn btn-success float-end">Add New User</a>
 <table class="table">
     <tr>
@@ -46,7 +46,6 @@ $students = mysqli_fetch_all($result,MYSQLI_ASSOC);
         <th>Blood Group</th>
         <th>Email</th>
         <th>Mobile No</th>
-        
         <th>Action</th>
     </tr> 
     <?php
@@ -55,7 +54,7 @@ $students = mysqli_fetch_all($result,MYSQLI_ASSOC);
         <td><?php echo $student['id']; ?></td>
         <td><?php echo $student['name']; ?></td>
         <td><?php echo $student['username']; ?></td>
-        <td><?php echo $student['rollno']; ?></td>
+        <td><?php echo $student['rolleno']; ?></td>
         <td><?php echo $student['class']; ?></td>
         <td><?php echo $student['dob']; ?></td>
         <td><?php echo $student['age']; ?></td>

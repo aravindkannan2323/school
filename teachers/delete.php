@@ -14,4 +14,6 @@ if(mysqli_query($connection,$query)){
 else{
     echo 'error deleting teacher: '.mysqli_error($connection);
 }
+
+header ('location: index.php');
 ?>

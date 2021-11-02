@@ -28,4 +28,6 @@ else {
     echo 'Error creeting data: ' .mysqli_error($connection);
 }
 
+header ('location: index.php');
+
 ?>

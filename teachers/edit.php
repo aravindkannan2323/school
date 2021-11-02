@@ -28,12 +28,17 @@ $result = mysqli_query($connection, $query);
 
 $teacher = mysqli_fetch_assoc($result);
 
+//ternary operator
+$age = 40 ;
+echo ($age >= 18) ? 'adult' : 'child';
+
+
 //print_r($teachers);
 ?>
 
 <body>
   <div class="container">
-    <h1>Register</h1>
+    <h1>Edit Teacher</h1>
     <form action="update.php" method="POST">
       <div class="row">
         <div class='col-md-6'>
@@ -43,7 +48,7 @@ $teacher = mysqli_fetch_assoc($result);
           </div>
 
           <div>
-            <label for="dob" class="form-label">Dob</label>
+            <label for="dob" class="form-label">DOB</label>
             <input type="date" class="form-control" name="dob" id="dob" format="yyyy-mm-dd" value="<?php echo $teacher['dob']; ?>">
           </div>
           <div>
@@ -109,31 +114,30 @@ $teacher = mysqli_fetch_assoc($result);
           <div>
             <label for="qualification" class="form-label"><b>Qualification</b></label>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="qualification" id="quliftMsc" value="M.Sc">
+              <input class="form-check-input" type="radio" name="qualification" id="quliftMsc" value="M.Sc" <?php echo ($teacher['qualification'] == 'M.Sc') ? 'checked' : '';?> >
               <label class="form-check-label" for="quliftMsc">
                 M.Sc
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="qualification" id="quliftBEd" value="B.Ed">
+              <input class="form-check-input" type="radio" name="qualification" id="quliftBEd" value="B.Ed" <?php echo ($teacher['qualification'] == 'B.Ed') ? 'checked' : '';?> >
               <label class="form-check-label" for="quliftBEd">
                 B.Ed
               </label>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="qualification" id="quliftMBA" value="MBA">
+            <div class="form-check"> 
+              <input class="form-check-input" type="radio" name="qualification" id="quliftMBA" value="MBA" <?php echo($teacher['qualification'] == 'MBA') ? 'checked' : '';?> >
               <label class="form-check-label" for="quliftMBA">
                 MBA
               </label>
-            </div>
+            </div> 
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="qualification" id="quliftMABEd" value="MA,BEd">
-              <label class="form-check-label" for="quliftMABEd">
+              <input class="form-check-input" type="radio" name="qualification" id="quliftMABEd" value="MA,BEd" <?php echo($teacher['qualification'] == 'MA,BEd') ? 'checked' : '';?> > 
                 MA,B.Ed
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="qualification" id="quliftBSc" value="B.Sc">
+              <input class="form-check-input" type="radio" name="qualification" id="quliftBSc" value="B.Sc" <?php echo($teacher['qualification'] == 'B.Sc') ? 'checked' : ''; ?> >
               <label class="form-check-label" for="quliftBSc">
                 B.Sc
               </label>
@@ -144,7 +148,7 @@ $teacher = mysqli_fetch_assoc($result);
             <input type="monthlysalary" class="form-control" name="monthlysalary" id="monthlysalary" value="<?php echo $teacher['monthlysalary']; ?>" placeholder="Enter your Monthlysalary">
           </div>
           <div>
-            <label for="mobileno" class="form-label">Mobileno</label>
+            <label for="mobileno" class="form-label">Mobile No</label>
             <input type="number" class="form-control" name="mobileno" id="mobileno" value="<?php echo $teacher['mobileno']; ?>" placeholder="Enter your 10 digit mobile number">
           </div>
 
