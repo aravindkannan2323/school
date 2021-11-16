@@ -36,7 +36,7 @@ $students = mysqli_fetch_all($result,MYSQLI_ASSOC);
 <a href="register.php" class="btn btn-success float-end">Add New User</a>
 <table class="table">
     <tr>
-        <th>Id</th>
+        <th>ID</th>
         <th>Name</th>
         <th>Username</th>
         <th>Roll No</th>

@@ -20,7 +20,7 @@ class Database{
         if (!$connection) {
             die("Connection Failed: " .  mysqli_connect_error());
         } else {
-            echo "Connected to database successfully from data";
+           // echo "Connected to database successfully from data";
         } 
 
         return $connection;

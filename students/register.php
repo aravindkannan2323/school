@@ -1,3 +1,7 @@
+<?php 
+include '../includes/navbar.php';
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -28,7 +32,7 @@
           </div>
           <div>
             <label for="rolleno" class="form-label">Roll No *</label>
-            <input type="text" class="form-control required" name="rolleno" id="rolleno" placeholder="Enter Rolleno" required>
+            <input type="text" class="form-control required" name="rolleno" id="rolleno" placeholder="Enter Rollno" required>
           </div>
           <div>
             <label for="class" class="form-label">Class *</label>
@@ -36,7 +40,7 @@
           </div>
           <div>
             <label for="dob" class="form-label">DOB *</label>
-            <input type="Date" class="form-control required" name="dob" id="dob" required>
+            <input type="date" class="form-control required" name="dob" id="dob" format="yyyy-mm-dd" value="<?php echo $teacher['dob']; ?>" required>
           </div>
           <div>
             <label for="age" class="form-label">Age *</label>
@@ -44,8 +48,8 @@
           </div>
           <div>
             <label for="bloodgroup" class="form-label">Blood Group *</label>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>BloodGroup</option>
+            <select name="bloodgroup" id="bloodgroup" class="form-select required" aria-label="Default select example" required>
+              <option value="">Select your Blood Group</option>
               <option value="AB-ve">AB-ve</option>
               <option value="b+ve">B+ve</option>
               <option value="o-ve">O-ve</option>

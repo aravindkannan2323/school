@@ -1,3 +1,7 @@
+<?php 
+include '../includes/navbar.php';
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -31,7 +35,7 @@
 
           <div>
             <label for="age" class="form-label">Age *</label>
-            <input type="number" class="form-control required" name="age" id="age" min="25" max="35" required>
+            <input type="number" class="form-control required" name="age" id="age" min="25" max="35" placeholder="Enter your Age Between 25 to 35" required>
           </div>
 
           <div>
@@ -42,25 +46,25 @@
           <div>
             <label for="department" class="form-label"><b>Department</b></label>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="english" name="department[]" id="deptenglish">
+              <input class="form-check-input" type="checkbox" value="English" name="department[]" id="deptenglish">
               <label class="form-check-label" for="deptenglish">
                 English
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="tamil" name="department[]" id="depttamil">
+              <input class="form-check-input" type="checkbox" value="Tamil" name="department[]" id="depttamil">
               <label class="form-check-label" for="depttamil">
                 Tamil
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="maths" name="department[]" id="deptmaths">
+              <input class="form-check-input" type="checkbox" value="Maths" name="department[]" id="deptmaths">
               <label class="form-check-label" for="deptmaths">
                 Maths
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="physics" name="department[]" id="deptphysics">
+              <input class="form-check-input" type="checkbox" value="Physics" name="department[]" id="deptphysics">
               <label class="form-check-label" for="deptphysics">
                 Physics
               </label>
@@ -78,13 +82,13 @@
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="computer science" name="department[]" id="deptcomputerscience">
+              <input class="form-check-input" type="checkbox" value="Computer science" name="department[]" id="deptcomputerscience">
               <label class="form-check-label" for="deptcomputerscience">
                 Computer science
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="chemistry" name="department[]" id="deptchemistry" checked>
+              <input class="form-check-input" type="checkbox" value="Chemistry" name="department[]" id="deptchemistry">
               <label class="form-check-label" for="deptchemistry">
                 Chemistry
               </label>
@@ -94,31 +98,31 @@
           <div>
             <label for="" class="form-label"><b>Qualification</b></label>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="qualification" id="quliftMsc">
+              <input class="form-check-input" type="radio" name="qualification" id="quliftMsc" value="M.Sc">
               <label class="form-check-label" for="quliftMsc">
                 M.Sc
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="qualification" id="quliftBEd">
+              <input class="form-check-input" type="radio" name="qualification" id="quliftBEd" value="B.Ed">
               <label class="form-check-label" for="quliftBEd">
                 B.Ed
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="qualification" id="quliftMBA">
+              <input class="form-check-input" type="radio" name="qualification" id="quliftMBA" value="MBA">
               <label class="form-check-label" for="quliftMBA">
                 MBA
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="qualification" id="quliftMABEd">
+              <input class="form-check-input" type="radio" name="qualification" id="quliftMABEd" value="MA,BEd">
               <label class="form-check-label" for="quliftMABEd">
                 MA,B.Ed
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="qualification" id="quliftBSc">
+              <input class="form-check-input" type="radio" name="qualification" id="quliftBSc" value="B.Sc">
               <label class="form-check-label" for="quliftBSc">
                 B.Sc
               </label>
@@ -152,28 +156,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
     -->
 
-    <script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-  'use strict'
+  <script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+    'use strict'
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.querySelectorAll('.needs-validation')
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
 
-  // Loop over them and prevent submission
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
 
-        form.classList.add('was-validated')
-      }, false)
-    })
-})()
-      </script>
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+  </script>
+
 </body>
 
 </html>

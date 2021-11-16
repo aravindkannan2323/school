@@ -38,7 +38,7 @@ $teachers = mysqli_fetch_all($result,MYSQLI_ASSOC);
 <a href="register.php" class="btn btn-success float-end">Add New Teacher</a>
 <table class="table">
 <tr>
-        <th>Id</th>
+        <th>ID</th>
         <th>Name</th>
         <th>DOB</th>
         <th>Age</th>
