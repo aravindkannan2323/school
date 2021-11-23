@@ -15,6 +15,9 @@ $qualification   = $_POST['qualification'];
 $monthlysalary   = $_POST['monthlysalary'];
 $mobileno        = $_POST['mobileno'];
 
+
+$department = implode(',', $department);
+
 $query = "INSERT INTO teachers ( name, dob, age, email, department, qualification, monthlysalary, mobileno)
 VALUES ('$name', '$dob', '$age', '$email', '$department', '$qualification', '$monthlysalary', '$mobileno')";
 

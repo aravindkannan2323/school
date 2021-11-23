@@ -172,7 +172,7 @@ $department = explode(',', $teacher['department']);
 
           <button type="submit" class="btn btn-success mt-2">Update</button>
 
-        </div>
+        </div> 
       </div>
 
     </form>
