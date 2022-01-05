@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Tmail Nadu public school</a>
@@ -21,11 +22,26 @@
         <li class="nav-item">
           <a class="nav-link" href="../hrs/index.php">Hrs</a>
         </li>
+      </ul>
+
+      <ul class="navbar-nav ms-auto">
+        <?php if(!isset($_SESSION['username'])): ?>
         <li class="nav-item">
           <a class="nav-link" href="../access/login.php">Login</a>
         </li>
-        
+        <?php endif; ?>
 
+        <?php if(isset($_SESSION['username'])) : ?>
+        <li class="nav-item">
+          Hello, <?php echo $_SESSION['username']; ?>
+        </li>
+        <?php endif; ?>
+
+        <?php if(isset($_SESSION['username'])): ?>
+        <li class="nav-item">
+          <a class="nav-link" href="../access/logout.php">Logout</a>
+        </li>
+        <?php endif; ?>
       </ul>
       
     </div>

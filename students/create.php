@@ -10,6 +10,7 @@ $name       = $_POST['name'];
 $username   = $_POST['username'];
 $rolleno    = $_POST['rolleno'];
 $class      = $_POST['class'];
+$degree     = $_POST['degree'];
 $dob        = $_POST['dob'];
 $age        = $_POST['age'];
 $bloodgroup = $_POST['bloodgroup'];
@@ -18,8 +19,8 @@ $mobileno   = $_POST['mobileno'];
 $password   = $_POST['password'];
 
 
-$query = "INSERT INTO students ( name, username, rolleno, class, dob, age, bloodgroup, email, mobileno, password)
-VALUES ('$name', '$username', '$rolleno', '$class', '$dob', '$age', '$bloodgroup', '$email', '$mobileno', '$password')";
+$query = "INSERT INTO students ( name, username, rolleno, class, degree, dob, age, bloodgroup, email, mobileno, password)
+VALUES ('$name', '$username', '$rolleno', '$class', '$degree', '$dob', '$age', '$bloodgroup', '$email', '$mobileno', '$password')";
 
 if (mysqli_query($connection,$query)) { 
   echo "student record created sucessfully!";

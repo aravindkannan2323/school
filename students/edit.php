@@ -1,4 +1,8 @@
 <?php
+//session_start();
+
+//echo $_SESSION['userid'];
+
 include '../database/database.php';
 
 include '../includes/navbar.php';
@@ -56,8 +60,65 @@ $student = mysqli_fetch_assoc($result);
             <input type="text" class="form-control required" name="class" id="class" value="<?php echo $student['class']; ?>"  placeholder="Enter your class" required>
           </div>
           <div>
+            <label for="" class="form-label"><b>Degree</b></label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="degree" id="degreeBAEnglish" value="B.A.English" <?php echo ($student['degree'] == 'B.A.English') ? 'checked' : ''; ?> >
+              <label class="form-check-label" for="degreeBAEnglish">
+                B.A.English
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="degree" id="degreeBATamil" value="B.A.Tamil" <?php echo ($student['degree'] == 'B.A.Tamil') ? 'checked' : ''; ?> >
+              <label class="form-check-label" for="degreeBATamil">
+                B.A.Tamil
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="degree" id="degreeBAEconomics" value="B.A.Economics" <?php echo ($student['degree'] == 'B.A.Economics') ? 'checked' : ''; ?> >
+              <label class="form-check-label" for="degreeBAEconomics">
+                B.A.Economics
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="degree" id="degreeBScPhysics" value="B.Sc.Physics" <?php echo ($student['degree'] == 'B.Sc.Physics') ? 'checked' : ''; ?> >
+              <label class="form-check-label" for="degreeBScPhysics">
+                B.Sc.Physics
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="degree" id="degreeBScChemistry" value="B.Sc.Chemistry" <?php echo ($student['degree'] == 'B.Sc.Chemistry') ? 'checked' : ''; ?> >
+              <label class="form-check-label" for="degreeBScChemistry">
+                B.Sc.Chemistry
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="degree" id="degreeBScMathematics" value="B.Sc.Mathematics" <?php echo ($student['degree'] == 'B.Sc.Mathematics') ? 'checked' : ''; ?> >
+              <label class="form-check-label" for="degreeB.Sc.Mathematics">
+                B.Sc.Mathematics
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="degree" id="degreeBScComputerScience" value="B.Sc.Computer Science" <?php echo ($student['degree'] == 'B.Sc.Computer Science') ? 'checked' : ''; ?> >
+              <label class="form-check-label" for="degreeBScComputerScience">
+                B.Sc.Computer Science
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="degree" id="degreeBBA" value="BBA" <?php echo ($student['degree'] == 'BBA') ? 'checked' : ''; ?> >
+              <label class="form-check-label" for="degreeBBA">
+                BBA
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="degree" id="degreeBCom" value="B.Com" <?php echo ($student['degree'] == 'B.Com') ? 'checked' : ''; ?> >
+              <label class="form-check-label" for="degreeBCom">
+                B.Com
+              </label>
+            </div>
+             </div>
+          <div>
             <label for="dob" class="form-label">DOB *</label>
-            <input type="date" class="form-control required" name="dob" id="dob" format="yyyy-mm-dd" value="<?php echo $teacher['dob']; ?>" required>
+            <input type="date" class="form-control required" name="dob" id="dob" format="yyyy-mm-dd" value="<?php echo $student['dob']; ?>" required>
           </div>
           <div>
             <label for="age" class="form-label">Age *</label>
@@ -90,6 +151,7 @@ $student = mysqli_fetch_assoc($result);
           <input type="hidden" name="id" id="id" value="<?php echo $_GET['id']; ?>">
 
           <button type="submit" class="btn btn-success mt-2">Update</button>
+          
         </div>
       </div>
 

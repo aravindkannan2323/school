@@ -13,9 +13,8 @@ include '../includes/navbar.php';
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-  <title>Registration</title>
+<title>Registration</title>
 </head>
-
 <body>
   <div class="container">
     <h1>Register</h1>
@@ -39,8 +38,65 @@ include '../includes/navbar.php';
             <input type="text" class="form-control required" name="class" id="class" placeholder="Enter your class" required>
           </div>
           <div>
+            <label for="" class="form-label"><b>Degree</b></label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="degree" id="degreeBAEnglish" value="B.A.English">
+              <label class="form-check-label" for="degreeBAEnglish">
+                B.A.English
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="degree" id="degreeBATamil" value="B.A.Tamil">
+              <label class="form-check-label" for="degreeBATamil">
+                B.A.Tamil
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="degree" id="degreeBAEconomics" value="B.A.Economics">
+              <label class="form-check-label" for="degreeBAEconomics">
+                B.A.Economics
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="degree" id="degreeBScPhysics" value="B.Sc.Physics">
+              <label class="form-check-label" for="degreeBScPhysics">
+                B.Sc.Physics
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="degree" id="degreeBScChemistry" value="B.Sc.Chemistry">
+              <label class="form-check-label" for="degreeBScChemistry">
+                B.Sc.Chemistry
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="degree" id="degreeBScMathematics" value="B.Sc.Mathematics">
+              <label class="form-check-label" for="degreeB.Sc.Mathematics">
+                B.Sc.Mathematics
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="degree" id="degreeBScComputerScience" value="B.Sc.Computer Science">
+              <label class="form-check-label" for="degreeBScComputerScience">
+                B.Sc.Computer Science
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="degree" id="degreeBBA" value="BBA">
+              <label class="form-check-label" for="degreeBBA">
+                BBA
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="degree" id="degreeBCom" value="B.Com">
+              <label class="form-check-label" for="degreeBCom">
+                B.Com
+              </label>
+            </div>
+             </div>
+          <div>
             <label for="dob" class="form-label">DOB *</label>
-            <input type="date" class="form-control required" name="dob" id="dob" format="yyyy-mm-dd" value="<?php echo $teacher['dob']; ?>" required>
+            <input type="date" class="form-control required" name="dob" id="dob" format="yyyy-mm-dd" required>
           </div>
           <div>
             <label for="age" class="form-label">Age *</label>

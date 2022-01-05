@@ -1,7 +1,18 @@
 <?php
+//session_start();
+
+//$_SESSION['userid'] = 121;echo 'session userid is set ';
+
+//echo $_SESSION['userid'];
+
 include '../database/database.php'; 
 
 include '../includes/navbar.php';
+
+// if user doest not have "List permission", redirect to login page
+if(!in_array('List', $_SESSION['permission'])){
+  header('Location: ../access/login.php');
+}
 ?>
 
 
@@ -21,7 +32,7 @@ include '../includes/navbar.php';
     
 <?php
 
-$dbobj = New Database();
+$dbobj = new Database();
 $connection = $dbobj->createconnection();
 
 $query = "SELECT * FROM Students";
@@ -33,7 +44,13 @@ $students = mysqli_fetch_all($result,MYSQLI_ASSOC);
 ?>
 <div class="container">
 <h1>Students</h1>
+
+<?php 
+//print_r($_SESSION['permission']);
+
+if(in_array('Add', $_SESSION['permission']) ){ ?>
 <a href="register.php" class="btn btn-success float-end">Add New User</a>
+<?php } ?>
 <table class="table">
     <tr>
         <th>ID</th>
@@ -41,6 +58,7 @@ $students = mysqli_fetch_all($result,MYSQLI_ASSOC);
         <th>Username</th>
         <th>Roll No</th>
         <th>Class</th>
+        <th>Degree</th>
         <th>DOB</th>
         <th>Age</th>
         <th>Blood Group</th>
@@ -56,6 +74,7 @@ $students = mysqli_fetch_all($result,MYSQLI_ASSOC);
         <td><?php echo $student['username']; ?></td>
         <td><?php echo $student['rolleno']; ?></td>
         <td><?php echo $student['class']; ?></td>
+        <td><?php echo $student['degree']; ?></td>
         <td><?php echo $student['dob']; ?></td>
         <td><?php echo $student['age']; ?></td>
         <td><?php echo $student['bloodgroup']; ?></td>
@@ -64,8 +83,13 @@ $students = mysqli_fetch_all($result,MYSQLI_ASSOC);
         
 
         <td>
+          <?php if(in_array('Edit', $_SESSION['permission']) ) : ?>
             <a href="edit.php?id=<?php echo $student['id']; ?>" class="btn btn-success">Edit</a>
+          <?php endif; ?> 
+
+          <?php if(in_array('Delete', $_SESSION['permission']) ) : ?>
             <a href="delete.php?id=<?php echo $student['id']; ?>" class="btn btn-danger">Delete</a>
+          <?php endif; ?>           
         </td>
     </tr>
 

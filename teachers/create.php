@@ -3,6 +3,7 @@
 include '../database/database.php';
 
 $dbobj = new Database();
+
 $connection = $dbobj->createconnection();
 
 //insert data
@@ -14,7 +15,6 @@ $department      = $_POST['department'];
 $qualification   = $_POST['qualification'];
 $monthlysalary   = $_POST['monthlysalary'];
 $mobileno        = $_POST['mobileno'];
-
 
 $department = implode(',', $department);
 
